@@ -1,7 +1,7 @@
 unzip mosquitto.zip &&
         cd mosquitto-cluster-master &&
         cp ../mynet.sh . &&
-        sh mynet.sh >> mosquitto.conf &&echo "WITH_CLUSTER:=yes">>mosquitto.conf
+        sh mynet.sh >> mosquitto.conf
         make &&
         make install &&
         ln -s /usr/local/lib/libmosquitto.so.1 /usr/lib/libmosquitto.so.1 &&
